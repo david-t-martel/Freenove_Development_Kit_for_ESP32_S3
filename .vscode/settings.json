@@ -14,6 +14,9 @@
   "C_Cpp.default.intelliSenseMode": "gcc-x64",
   "C_Cpp.default.includePath": [
     "${workspaceFolder}/**",
+    "${workspaceFolder}/src/**",
+    "${workspaceFolder}/include/**",
+    "${workspaceFolder}/lib/**",
     "${workspaceFolder}/.pio/libdeps/**",
     "${env:HOME}/.platformio/packages/framework-espidf/**"
   ],

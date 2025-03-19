@@ -2,6 +2,9 @@
   "folders": [
     {
       "path": "."
+    },
+    {
+      "path": "lib/ESP32-audioI2S_v2.0.0/ESP32-audioI2S"
     }
   ],
   "settings": {

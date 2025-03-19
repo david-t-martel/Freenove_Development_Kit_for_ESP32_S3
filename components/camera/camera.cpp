@@ -4,9 +4,8 @@
 bool camera_flip_vertical_state = 0;
 bool camera_mirror_horizontal_state = 1;
 
-// Initialize the camera drive
-int camera_init_rgb565(void)
-{
+//Initialize the camera drive
+int camera_init_rgb565(void) {
   esp_camera_deinit();
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
@@ -35,27 +34,25 @@ int camera_init_rgb565(void)
   config.jpeg_quality = 10;
   config.fb_count = 2;
 
-  // camera init
+  //camera init
   esp_err_t err = esp_camera_init(&config);
-  if (err != ESP_OK)
-  {
+  if (err != ESP_OK) {
     Serial.printf("Camera init failed with error 0x%x\r\n", err);
     return 0;
   }
 
   sensor_t *s = esp_camera_sensor_get();
   // initial sensors are flipped vertically and colors are a bit saturated
-  s->set_vflip(s, camera_flip_vertical_state);       // flip it back
-  s->set_hmirror(s, camera_mirror_horizontal_state); // horizontal mirror image
-  s->set_brightness(s, 0);                           // up the brightness just a bit
-  s->set_saturation(s, 0);                           // lower the saturation
+  s->set_vflip(s, camera_flip_vertical_state);        // flip it back
+  s->set_hmirror(s, camera_mirror_horizontal_state);  // horizontal mirror image
+  s->set_brightness(s, 0);                            // up the brightness just a bit
+  s->set_saturation(s, 0);                            // lower the saturation
 
   Serial.println("Camera configuration complete!");
   return 1;
 }
 
-int camera_init_jpg(void)
-{
+int camera_init_jpg(void) {
   esp_camera_deinit();
   camera_config_t config;
   config.ledc_channel = LEDC_CHANNEL_0;
@@ -86,48 +83,42 @@ int camera_init_jpg(void)
 
   // camera init
   esp_err_t err = esp_camera_init(&config);
-  if (err != ESP_OK)
-  {
+  if (err != ESP_OK) {
     Serial.printf("Camera init failed with error 0x%x", err);
     return 0;
   }
 
   sensor_t *s = esp_camera_sensor_get();
   // initial sensors are flipped vertically and colors are a bit saturated
-  s->set_vflip(s, camera_flip_vertical_state);       // flip it back
-  s->set_hmirror(s, camera_mirror_horizontal_state); // horizontal mirror image
-  s->set_brightness(s, 1);                           // up the brightness just a bit
-  s->set_saturation(s, 0);                           // lower the saturation
+  s->set_vflip(s, camera_flip_vertical_state);        // flip it back
+  s->set_hmirror(s, camera_mirror_horizontal_state);  // horizontal mirror image
+  s->set_brightness(s, 1);                            // up the brightness just a bit
+  s->set_saturation(s, 0);                            // lower the saturation
 
   Serial.println("Camera configuration complete!");
   return 1;
 }
 
-bool camera_get_flip_vertical(void)
-{
+bool camera_get_flip_vertical(void) {
   return camera_flip_vertical_state;
 }
 
-bool camera_get_mirror_horizontal(void)
-{
+bool camera_get_mirror_horizontal(void) {
   return camera_mirror_horizontal_state;
 }
 
-void camera_set_flip_vertical(bool state)
-{
+void camera_set_flip_vertical(bool state) {
   sensor_t *s = esp_camera_sensor_get();
   camera_flip_vertical_state = state;
   s->set_vflip(s, camera_flip_vertical_state);
 }
 
-void camera_set_mirror_horizontal(bool state)
-{
+void camera_set_mirror_horizontal(bool state) {
   sensor_t *s = esp_camera_sensor_get();
   camera_mirror_horizontal_state = state;
   s->set_hmirror(s, camera_mirror_horizontal_state);
 }
 
-void camera_deinit(void)
-{
+void camera_deinit(void) {
   esp_camera_deinit();
 }
