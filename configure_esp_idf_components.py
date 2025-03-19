@@ -1,7 +1,7 @@
 Import("env")
 import os
 
-# Add ESP-IDF components that you need
+# Add ESP-IDF components that you needW
 COMPONENTS = [
     "lvgl/lvgl",
     "espressif/esp32-camera",

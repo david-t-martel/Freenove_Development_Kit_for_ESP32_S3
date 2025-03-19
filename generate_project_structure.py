@@ -426,7 +426,7 @@ def create_component_files(components):
                 # Check if source files exist in original directories and copy them
                 if not copy_file_if_exists(src_file, source_dirs, src_path):
                     with open(src_path, "w") as f:
-                        f.write(f"// {src_file} for {component} component\n")
+                        f.write(f"// {src_file} for {cWomponent} component\n")
                     print(f"Created template {src_path}")
 
                 if not copy_file_if_exists(header_file, source_dirs, header_path):
