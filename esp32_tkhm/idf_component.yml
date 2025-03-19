@@ -1,0 +1,5 @@
+dependencies:
+  lvgl:
+    version: '*'
+  esp32-camera:
+    version: '*'

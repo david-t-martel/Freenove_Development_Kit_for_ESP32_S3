@@ -1,0 +1,41 @@
+{
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "files.exclude": {
+    "**/.pio/build/**": true,
+    "**/.vscode/.browse.c_cpp.db*": true,
+    "**/.vscode/c_cpp_properties.json": true,
+    "**/.vscode/ipch/**": true
+  },
+  "C_Cpp.default.cStandard": "c11",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**",
+    "${workspaceFolder}/.pio/libdeps/**",
+    "${env:HOME}/.platformio/packages/framework-espidf/**"
+  ],
+
+  // Recommended additional settings for ESP-IDF development
+  "idf.adapterTargetName": "esp32s3",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32s3.cfg"
+  ],
+  "idf.portWin": "COM3", // Update this to match your actual COM port
+  "idf.flashType": "UART",
+  "idf.monitorBaudRate": "115200",
+
+  // PlatformIO specific settings
+  "platformio-ide.useBuiltinPythonEnvironment": true,
+  "platformio-ide.activateOnlyOnPlatformIOProject": true,
+  "editor.formatOnSave": true,
+
+  // LVGL specific settings
+  "C_Cpp.default.defines": ["LV_CONF_INCLUDE_SIMPLE"],
+
+  // ESP-IDF component manager path
+  "terminal.integrated.env.windows": {
+    "IDF_PATH": "${env:HOME}/.platformio/packages/framework-espidf",
+    "IDF_TOOLS_PATH": "${env:HOME}/.platformio/packages/framework-espidf/tools"
+  }
+}

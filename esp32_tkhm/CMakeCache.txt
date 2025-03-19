@@ -263,11 +263,11 @@ CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
 //Patch version of cmake used to create the current loaded cache
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 //Path to CMake executable.
-CMAKE_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cmake.exe
+CMAKE_COMMAND:INTERNAL=C:/codedev/st/STM32CubeCLT_1.17.0/CMake/bin/cmake.exe
 //Path to cpack program executable.
-CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files/CMake/bin/cpack.exe
+CMAKE_CPACK_COMMAND:INTERNAL=C:/codedev/st/STM32CubeCLT_1.17.0/CMake/bin/cpack.exe
 //Path to ctest program executable.
-CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files/CMake/bin/ctest.exe
+CMAKE_CTEST_COMMAND:INTERNAL=C:/codedev/st/STM32CubeCLT_1.17.0/CMake/bin/ctest.exe
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
@@ -374,7 +374,7 @@ CMAKE_RC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=C:/Program Files/CMake/bin
+CMAKE_ROOT:INTERNAL=C:/codedev/st/STM32CubeCLT_1.17.0/CMake/share/cmake-3.28
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -407,3 +407,4 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+

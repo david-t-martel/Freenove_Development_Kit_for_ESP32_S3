@@ -1,0 +1,15 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "esp32_tkhm",
+      "path": "esp32_tkhm"
+    }
+  ],
+  "settings": {
+    "dotnet.defaultSolution": "disable",
+    "powershell.cwd": "esp32s3"
+  }
+}
