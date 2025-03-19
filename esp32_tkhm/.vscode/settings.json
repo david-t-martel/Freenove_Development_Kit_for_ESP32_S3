@@ -1,10 +1,13 @@
 {
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "files.exclude": {
-    "**/.pio/build/**": true,
+    "**/.pio/**": true,
     "**/.vscode/.browse.c_cpp.db*": true,
-    "**/.vscode/c_cpp_properties.json": true,
-    "**/.vscode/ipch/**": true
+    "**/.vscode/ipch/**": true,
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/build/**": true,
+    "**/extra/": true
   },
   "C_Cpp.default.cStandard": "c11",
   "C_Cpp.default.cppStandard": "c++17",
