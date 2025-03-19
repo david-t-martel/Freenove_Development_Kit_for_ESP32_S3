@@ -14,7 +14,7 @@ Freenove ESP32-S3 Board can be uploaded code using Arduino® IDE.
 
 ### Download
 
-Click the green "Code" button, then click "Download ZIP" button in the pop-up window.  
+Click the green "Code" button, then click "Download ZIP" button in the pop-up window.
 Do NOT click the "Open in Desktop" button, it will lead you to install Github software.
 
 > If you meet any difficulties, please contact our technical team for help.
@@ -79,7 +79,7 @@ Freenove® brand and logo are trademarks of Freenove Creative Technology Co., Lt
 
 Other registered trademarks and their owners appearing in this repository:
 
-Arduino® is a trademark of Arduino LLC (https://www.arduino.cc/).  
-Raspberry Pi® is a trademark of Raspberry Pi Foundation (https://www.raspberrypi.org/).  
-micro:bit® is a trademark of Micro:bit Educational Foundation (https://www.microbit.org/).  
+Arduino® is a trademark of Arduino LLC (https://www.arduino.cc/).
+Raspberry Pi® is a trademark of Raspberry Pi Foundation (https://www.raspberrypi.org/).
+micro:bit® is a trademark of Micro:bit Educational Foundation (https://www.microbit.org/).
 Espressif® is a trademark of Espressif Systems (Shanghai) Co.Ltd (https://www.espressif.com/).
