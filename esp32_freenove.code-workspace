@@ -1,22 +1,27 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"name": "esp-lowcode-matter",
-			"path": "../../../../Users/david/esp/esp-lowcode-matter"
-		},
-		{
-			"name": "esp-idf-release-v5.3",
-			"path": "../../../../Users/david/esp/esp-idf-release-v5.3"
-		},
-		{
-			"name": "esp-amp",
-			"path": "../../../../Users/david/esp/esp-amp"
-		}
-	],
-	"settings": {
-		"dotnet.defaultSolution": "disable"
-	}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "name": "esp-lowcode-matter",
+      "path": "../../../../Users/david/esp/esp-lowcode-matter"
+    },
+    {
+      "name": "esp-idf-release-v5.3",
+      "path": "../../../../Users/david/esp/esp-idf-release-v5.3"
+    },
+    {
+      "name": "esp-amp",
+      "path": "../../../../Users/david/esp/esp-amp"
+    },
+    {
+      "name": "esp32_tkhm",
+      "path": "esp32_tkhm"
+    }
+  ],
+  "settings": {
+    "dotnet.defaultSolution": "disable",
+    "powershell.cwd": "esp32s3"
+  }
 }
